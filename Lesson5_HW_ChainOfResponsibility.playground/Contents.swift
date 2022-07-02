@@ -1,6 +1,8 @@
 import UIKit
 import Foundation
 
+
+
 protocol Coffee {
     var coast: Swift.Double { get }
 }
@@ -56,6 +58,7 @@ class OptionCoffee: CoffeeDecorator {
 
 let coffe = SimpleCoffee()
 let doubleCoffeeSyrupSugarMilk = OptionCoffee(coffe, options: [.doubleCoffee, .syrup, .sugar, .milk])
+
 
 print("coffe: \(coffe.coast)")
 print("duoble Coffe + Syrup + Sugar + Milk: \(doubleCoffeeSyrupSugarMilk.coast)")
